@@ -1,10 +1,9 @@
+#ifndef BUCKET_H
+#define BUCKET_H
+
 #include <iostream>
 #include <string>
 
-using namespace std;
-
-#ifndef BUCKET_H
-#define BUCKET_H
 
 class Bucket {
 public:
@@ -27,7 +26,7 @@ public:
 	bool IsFull();
 	bool IsEmpty();
 
-	string Display();
+	std::string Display();
 
 	void Sort();
 

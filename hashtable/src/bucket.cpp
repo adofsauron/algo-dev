@@ -101,26 +101,26 @@ bool Bucket::IsFull() {
 }
 
 
-string Bucket::Display() {
-	string s;
+std::string Bucket::Display() {
+	std::string s;
 	s = "[";
-	//add first value to string s
+	//add first value to std::string s
 	if(valueArr[0] == 0) {
-			s += string("-");
+			s += std::string("-");
 		} else {
-			s += string(to_string(valueArr[0]));
+			s += std::string(std::to_string(valueArr[0]));
 		}
-	//add the rest to string s
+	//add the rest to std::string s
 	for(int i = 1 ; i < size; i++ ) {
-		s += string(",");
+		s += std::string(",");
 		if(valueArr[i] == 0) {
-			s += string("-");
+			s += std::string("-");
 		} else {
-			s += string(to_string(valueArr[i]));
+			s += std::string(std::to_string(valueArr[i]));
 		}
 	}
 	//close the array and add local depth
-	s += string("]") + string(" (") + string(to_string(local_depth)) + string(")");
+	s += std::string("]") + std::string(" (") + std::string(std::to_string(local_depth)) + std::string(")");
 	return s;
 }
 
