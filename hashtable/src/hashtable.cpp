@@ -111,9 +111,7 @@ ExtensibleHashTable::~ExtensibleHashTable() {
         delete(bucketArr[i]);
     }
 
-    if (this->bucketArr) {
-        delete(this->bucketArr);
-    }
+    delete []this->bucketArr;
 }
 
 
