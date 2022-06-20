@@ -15,7 +15,7 @@ void ExtensibleHashTable::split(int key) {
     int index;
     index = this->hash(key);
     Bucket* newBucket = new Bucket(bucket_size);
-    newBucket->local_depth = bucketArr[index]->local_depth; //copy the local depth
+    newBucket->local_depth = bucketArr[index]->local_depth; // copy the local depth
 
     if (global_depth == bucketArr[index]->local_depth) {
         this->doubleArr();
