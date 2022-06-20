@@ -24,7 +24,7 @@ Bucket::Bucket(int size) {
 
 Bucket::~Bucket() {
 	if (this->valueArr) {
-		delete(this->valueArr);
+		delete []this->valueArr;
 	}
 }
 
