@@ -4,3 +4,7 @@ out/
 obj/
 bin/
 *.o
+hashtable/hashtable
+mergesort/mergesort
+quicksort/quicksort
+skiplist/skiplist
