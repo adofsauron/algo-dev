@@ -98,7 +98,6 @@ bool Bucket::IsFull() {
 	return true;
 }
 
-
 std::string Bucket::Display() {
 	std::string s;
 	s = "[";
