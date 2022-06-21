@@ -12,7 +12,7 @@
     zskiplist* zsl = zslCreate(); \
     func(zsl); \
     zslFree(zsl); \
-    printf("--------------\n");\
+    printf("------------------------\n");\
 } while(0)
 
 void testInsert(zskiplist* zsl)

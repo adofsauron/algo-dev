@@ -349,6 +349,6 @@ void zslDump(zskiplist* zsl)
     }
 
     for (zskiplistNode* node = zsl->header->level[0].forward; node ; node = node->level[0].forward) {
-        printf("%s %f\n", (const char*)node->ele, node->score);
+        printf("%s --> %f\n", (const char*)node->ele, node->score);
     }
 }
