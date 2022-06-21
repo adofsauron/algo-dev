@@ -5,7 +5,6 @@
 #include "hashtable.h"
 #include "bucket.h"
 
-//public 
 
 ExtensibleHashTable::ExtensibleHashTable() {
     this->global_depth = 1;
@@ -34,7 +33,6 @@ ExtensibleHashTable::~ExtensibleHashTable() {
 
     delete []this->bucketArr;
 }
-
 
 bool ExtensibleHashTable::Find(int key) {
     int index;
@@ -84,8 +82,6 @@ void ExtensibleHashTable::Print() {
         std::cout << i << ": " << bucketArr[i] << " --> " << bucketArr[i]->Display() << std::endl;
     }
 }
-
-// private 
 
 int ExtensibleHashTable::hash(int key) {
     int index;
